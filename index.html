@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+            <button onclick="calvalue = '';  document.querySelector('#display'). value = calvalue;">c</button>
+            <button onclick="calvalue = calvalue+'1';  document.querySelector('#display').
+            value = calvalue;">1</button>
+            <button onclick="calvalue = calvalue+'2';  document.querySelector('#display'). value = calvalue;">2</button>
+            <button onclick="calvalue = calvalue+'+';  document.querySelector('#display'). value = calvalue;">+</button>
+            <button onclick="calvalue = calvalue+'3';  document.querySelector('#display'). value = calvalue;">3</button>
+            <button onclick="calvalue = calvalue+'4';  document.querySelector('#display'). value = calvalue;">4</button>
+            <button onclick="calvalue = calvalue+'-';  document.querySelector('#display'). value = calvalue;">-</button>
+            <button onclick="calvalue = calvalue+'5';  document.querySelector('#display'). value = calvalue;">5</button>
+            <button onclick="calvalue = calvalue+'6';  document.querySelector('#display'). value = calvalue;">6</button>
+            <button onclick="calvalue = calvalue+'*';  document.querySelector('#display'). value = calvalue;">*</button>
+            <button onclick="calvalue = calvalue+'7';  document.querySelector('#display'). value = calvalue;">7</button>
+            <button onclick="calvalue = calvalue+'8';  document.querySelector('#display'). value = calvalue;">8</button>
+            <button onclick="calvalue = calvalue+'/';  document.querySelector('#display'). value = calvalue;">/</button>
+            <button onclick=" let result = eval(calvalue); 
+            calvalue = result; document.querySelector('#display'). value = calvalue;">=</button>
+            <button onclick="calvalue = calvalue+'9';  document.querySelector('#display'). value = calvalue;">9</button>
+            <button onclick="calvalue = calvalue+'0';  document.querySelector('#display'). value = calvalue;">0</button>
+            <button onclick="calvalue = calvalue+'.';  document.querySelector('#display'). value = calvalue;">.</button>
+        </div>
+    </div>
+    <script>
+        let calvalue = '';
+        document.querySelector('#display').
+       value = calvalue;
+    </script>
+</body>
+</html>
